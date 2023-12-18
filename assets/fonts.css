@@ -1,0 +1,26 @@
+.sobre-bio p, .link-bio a {
+  font-size: 1.5rem;
+  font-family: 'Ropa Sans', sans-serif;
+}
+.container-skills h2, .courses {
+  font-family: 'Ropa Sans', sans-serif;
+}
+.front-skills, .back-skills {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.5rem;
+}
+.container-courses {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+footer {
+  font-family: 'Ropa Sans', sans-serif;
+}
+.f {
+  font-size: 0.3rem;
+  text-align: center;
+}
+.f:hover {
+  font-size: 1rem;
+}

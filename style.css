@@ -1,0 +1,161 @@
+body { /* Toda a página */
+  font-size: 15pt;
+  background: linear-gradient(45deg, #141e30, #243b55);
+  color: wheat;
+}
+/* nav ... */
+span {
+  display: inline;
+  border-bottom-color: wheat;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+nav span:hover::before {
+  display: flex;
+  justify-content: center;
+  content: "Hello, bem vindo!";
+  font-family: 'Ropa Sans', sans-serif;
+}
+/* header */
+.container-bio {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-bio img {
+  width: 170px; /* width: 180px; */
+  border-radius: 100%;
+  border: solid 4px wheat;
+}
+.img-bio img:hover {
+  border: solid 4px gold;
+}
+.sobre-bio p {
+  color: wheat;
+  padding: 0.7rem;
+  line-height: 2rem;
+}
+.link-bio a {
+  text-decoration: none;
+  color: wheat;
+}
+.link-bio a:hover {
+  border-bottom-color: gold;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  transition: 0.3s;
+  flex-flow: 1;
+  text-decoration-style: wavy;
+}
+.sobre-bio p .wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: gold;
+}
+/* main */
+.container-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-color: wheat;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin: 0 3rem;
+  margin-bottom: 4rem;
+}
+.front-skills ul, .back-skills ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.front-skills ul li, .back-skills ul li {
+  padding-top: 0.9rem;
+}
+.container-skills h2:hover {
+  border-bottom-color: gold;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  transition: 0.3s;
+  flex-flow: 1;
+}
+/* main */
+.courses {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0 0.1rem;
+}
+.courses li {
+  margin-top: 1rem;
+  border: 1px solid white;
+  list-style: none;
+  padding: 0.3rem 1.5rem;
+  flex-grow: 1;
+}
+.courses-visi span {
+  display: none;
+}
+.courses-visi:hover span {
+  display: block;
+}
+/* footer */
+footer {
+  margin-top: 5rem;
+  border-top-color: wheat;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.container-redes-sociais h3 {
+  margin: 0.5rem 0;
+}
+.container-redes-sociais ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.container-redes-sociais li {
+  margin: 0.2rem 0;
+}
+.container-redes-sociais ul li a {
+  text-decoration: none;
+  color: wheat;
+}
+.container-redes-sociais ul li a:hover {
+  border-bottom-color: gold;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  transition: 0.3s;
+}
+/* @media - auto min: 400px */
+@media (min-width: 400px) {
+  .container-bio {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .sobre-bio {
+    width: 65%;
+  }
+  .container-skills {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container-courses {
+    margin: 2rem;
+  }
+  .courses li {
+    margin: 1rem 1rem;
+  }
+}
+/* @media - auto max: 400px */
+@media (max-width: 400px) {
+  .sobre-bio p {
+    text-align: center;
+  }
+  .container-courses {
+    margin: 2rem;
+  }
+}
